@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -35,9 +36,9 @@
             max="100"
             placeholder="Age"
             />
-        <label for="role" id="role-label">Which option 
+        <label for="dropdown" id="role-label">Which option 
             best describes your current role?</label>
-        <select name="role" id="role">
+        <select name="role" id="dropdown">
             <option hidden>Select current role</option>
             <option value="student">Student</option>
             <option value="full time job">Full Time Job</option>
@@ -46,11 +47,11 @@
             <option value="other">Other</option>
         </select>
         <p>Would you recommend freeCodeCamp to a friend?</p>
-            <input type="radio" id="resp1" name="age" value="definitely">
+            <input type="radio" id="resp1" name="user-recommend" value="definitely">
             <label for="resp1">Definitely</label><br>
-            <input type="radio" id="resp2" name="age" value="maybe">
+            <input type="radio" id="resp2" name="user-recommend" value="maybe">
             <label for="resp2">Maybe</label><br>  
-            <input type="radio" id="resp3" name="age" value="not sure">
+            <input type="radio" id="resp3" name="user-recommend" value="not sure">
             <label for="resp3">Not sure</label><br><br>
         <label for="feature" id="feature-label">What is your favorite 
             feature of freeCodeCamp?</label>
@@ -85,6 +86,10 @@
             <label for="op3">Forum</label><br>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
             <label for="op3">Additional Courses</label><br>
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" 
+        placeholder="Enter your comment here..."></textarea>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
     </form>
 </body>
 </html>
