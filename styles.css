@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+#survey-form {
+    display: grid;
+    justify-content: center;
+    background-color: #262645;
+    border-radius: 5px;
+}
+label {
+    display: flex;
+}
+.submit-button {
+    background-color: #37af65;
+    border: none;
+    border-radius: 5px;
+}
